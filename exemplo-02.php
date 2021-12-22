@@ -1,7 +1,9 @@
 <?php
 
-session_start();
+require_once ("config.php");
 
-echo $_SESSION["nome"];
+session_unset();
+
+echo $_SESSION['nome'];
 
 ?>
